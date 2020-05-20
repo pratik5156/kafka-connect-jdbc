@@ -57,7 +57,7 @@ public class PostgresOOMIT extends BaseOOMIntegrationTest {
     return qb.toString();
   }
 
-  @Test
+  /*@Test
   public void testTableLocksWithStreamingReads() throws InterruptedException, SQLException {
     createTestTable();
     props.put(JdbcSourceTaskConfig.TABLES_CONFIG, "test_table");
@@ -67,7 +67,7 @@ public class PostgresOOMIT extends BaseOOMIntegrationTest {
     assertNoLocksOpen(task);
     task.stop();
     assertNoLocksOpen(task);
-  }
+  }*/
 
   private void createTestTable() throws SQLException {
     log.info("Creating test table");
